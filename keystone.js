@@ -1,7 +1,7 @@
 // Simulate config options from your production environment by
 // customising the .env file in your project's root folder.
 require('dotenv').config();
-require('./require.js')
+require('./require.js');
 
 // Require keystone
 var keystone = require('keystone');
@@ -42,14 +42,14 @@ keystone.set('locals', {
 });
 
 // Load your project's Routes
-keystone.set('routes', requireRoot('lib/routes'))
+keystone.set('routes', requireRoot('lib/routes'));
 
-keystone.set('cors allow origin', true)
+keystone.set('cors allow origin', true);
 
 // Configure the navigation bar in Keystone's Admin UI
 keystone.set('nav', {
 	users: 'users',
-})
+});
 
 // Start Keystone to connect to your database and initialise the web server
 
