@@ -16,6 +16,10 @@ keystone.init({
 
 	'less': 'public',
 	'static': 'public',
+	'signin logo': ['../images/favicon.png',
+					200,
+					200], // relative to public directory
+	'favicon': 'public/images/favicon.png',
 	'views': 'templates/views',
 	'view engine': 'pug',
 	'auto update': (process.env.AUTO_UPDATE === 'true'),
