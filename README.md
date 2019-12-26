@@ -15,9 +15,9 @@ Node + MongoDB + KeystoneJS + JWT with refresh token
 - [jsonwebtoken](https://github.com/auth0/node-jsonwebtoken)
 - [nodemailer](https://nodemailer.com/)
 - JWT
-- refresh token
-- access token
-- rest api
+- Refresh token
+- Access token
+- Rest api
 
 ## Table of Contents
 
@@ -180,4 +180,4 @@ Reach out to me at one of the following places!
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 - **[MIT license](http://opensource.org/licenses/mit-license.php)**
-- Copyright 2015 © <a href="http://fvcproductions.com" target="_blank">FVCproductions</a>.
+- Copyright 2019 © <a href="https://github.com/evgeniy-logvinov" target="_blank">EKL</a>.
