@@ -1,7 +1,76 @@
 # node.keystonejs.jwt
+
+> Project contains nodejs + express + keystonejs v4 + mongoDB + mongoose + nodemailer + jsonwebtoken
+
+> include terms/tags that can be searched
 Node + MongoDB + KeystoneJS + JWT with refresh token
 
-# Models
+**Badges**
+
+- [nodejs](https://nodejs.org)
+- [express](expressjs.com/)
+- [keystonejs](https://v4.keystonejs.com/)
+- [mongoDB](www.mongodb.com/‎)
+- [mongoose](www.mongodb.com/‎)
+- [jsonwebtoken](https://github.com/auth0/node-jsonwebtoken)
+- [nodemailer](https://nodemailer.com/)
+- JWT
+- refresh token
+- access token
+- rest api
+
+## Table of Contents
+
+- [Installation](#installation)
+- [Usage](#usage)
+- [Models](#models)
+- [RestApi](#restapi)
+- [Env Params](#EnvParams)
+- [Tests](#tests)
+- [Links](#links)
+- [License](#license)
+
+---
+
+## Installation
+
+### Clone
+
+- Clone this repo to your local machine using `https://github.com/evgeniy-logvinov/node.keystonejs.jwt.git`
+
+### Setup
+
+- If you want more syntax highlighting, format your code like this:
+
+> install packages first
+
+```shell
+$ npm install
+```
+or
+
+```shell
+$ yarn install
+```
+---
+
+## Usage
+
+- Project contains installed keystone js. To start project please run next command:
+
+```shell
+    npm run start
+```
+or
+
+```shell
+    yarn start
+```
+
+- Don't forget put [env params](#envParams) to file projectDir/.env
+---
+
+## Models
 RefreshToken
 * _refreshToken_: { type: `String` }
 * _createdDate_: { type: `Date`, default: `Date.now`, required:  `true` }
@@ -31,9 +100,10 @@ User
         type: `Boolean`, label: `'Can access Keystone'`,index: `true` }
 }
 
-# Rest api
+---
+## RestApi
 
-## security
+### Security
 
 * post `/security/signup`
 * get `/security/signup/activation/:id`
@@ -42,15 +112,17 @@ User
 * get `/security/token`
 * post `/security/refresh`
 
-## users
+### Users
 
 * get `/users/user/`
 * get `/users/sessions/`
 * delete `/users/sessions/delete/:id`
 * delete `/users/sessions/delete-all`
 
-# Env params
-* _COOKIE_SECRET_
+---
+
+## EnvParams
+* _COOKIE_SECRET_ for keystonejs
 * _MONGO_URI_ url to db in next format `mongodb://${user}:${pass}@${host}:${port}/{db_name}`
 * _NODE_ENV_ `development/production`
 * _AUTO_UPDATE_ param for keystone js auto update `true/false`
@@ -58,6 +130,7 @@ User
 * _JWT_SECRET_ token secret
 * _JWT_REFRESH_TOKEN_LIFE_ refresh token life `86400`
 * _JWT_TOKEN_LIFE_ token life `120000`
+* _SMTP_HAS_EMAIL_ACTIVATION_ if we need send activation email `true`
 * _SMTP_MAIL_ smtp mail in next format `account@host`
 * _SMTP_PASS_ smtp pass
 * _SMTP_HOST_ smtp host `smtp.googlemail.com`
@@ -65,8 +138,46 @@ User
 * _SMTP_SECURE_ `true/false`
 * _SMTP_SERVICE_NAME_ smtp message from `Auth Service`
 * _SMTP_ACTIVATION_ADDRESS_ activation address path in email which send to new user, for `http://localhost:3000` will send `http://localhost:3000/${userId}`
-* _SMTP_HAS_EMAIL_ACTIVATION_ do we need send activation email `true`
 
-# Main Idea
+---
+<!-- 
+## Tests
 
-https://gist.github.com/zmts/802dc9c3510d79fd40f9dc38a12bccfc
+- Use jest inside `/packages/*` for each project and add this line to your `package.json` file
+
+```js
+    scripts: {
+        "test:unit": "vue-cli-service test:unit --color"
+    }
+```
+
+--- -->
+
+## Support
+
+Reach out to me at one of the following places!
+
+- Github <a href="https://github.com/evgeniy-logvinov">`evgeniy-logvinov`</a>
+- Facebook <a href="https://www.facebook.com/evgeniy.logvinov.k" target="_blank">`evgeniy.logvinov.k`</a>
+- LinkedIn <a href="https://www.linkedin.com/in/evgeniy-logvinov-k/" target="_blank">`evgeniy-logvinov-k`</a>
+
+
+---
+## Links
+
+- [Main Idea](https://gist.github.com/zmts/802dc9c3510d79fd40f9dc38a12bccfc)
+- [Useful link #1](https://www.freecodecamp.org/news/securing-node-js-restful-apis-with-json-web-tokens-9f811a92bb52/)
+- [Useful link #2](https://jasonwatmore.com/post/2018/08/06/nodejs-jwt-authentication-tutorial-with-example-api)
+- [Useful link #3](https://medium.com/dev-bits/a-guide-for-adding-jwt-token-based-authentication-to-your-single-page-nodejs-applications-c403f7cf04f4)
+- [Useful link #4](https://tutorialedge.net/nodejs/nodejs-jwt-authentication-tutorial/)
+- [Useful link #5](https://www.sohamkamani.com/blog/javascript/2019-03-29-node-jwt-authentication/)
+- [Useful link #6](https://dev.to/_marcba/secure-your-node-js-application-with-json-web-token-4d4e)
+
+---
+
+## License
+
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+
+- **[MIT license](http://opensource.org/licenses/mit-license.php)**
+- Copyright 2015 © <a href="http://fvcproductions.com" target="_blank">FVCproductions</a>.
