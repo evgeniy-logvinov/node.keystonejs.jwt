@@ -105,19 +105,19 @@ User
 
 ### Security
 
-* post `/security/signup`
-* get `/security/signup/activation/:id`
-* post `/security/signin`
-* post `/security/signout`
-* get `/security/token`
-* post `/security/refresh`
+* _post_ `/security/signup` signup user in system. Body params: email, password, confirmPassword, emailPreferences, phone, name.
+* _get_ `/security/signup/activation/:id` activate user in system if it's needed. Request params: userId.
+* _post_ `/security/signin` signin user to systemю Body params: email, password.
+* _post_ `/security/signout` signout user from system. RefreshToken
+* _get_ `/security/token` get user token by refresh token. RefreshToken
+* _post_ `/security/refresh` get user refresh token. RefreshToken
 
 ### Users
 
-* get `/users/user/`
-* get `/users/sessions/`
-* delete `/users/sessions/delete/:id`
-* delete `/users/sessions/delete-all`
+* _get_ `/users/user/` get current user by token.
+* _get_ `/users/sessions/` get current user sessions.
+* _delete_ `/users/sessions/delete/:id` delete current user session by id. Request params: sessionId.
+* _delete_ `/users/sessions/delete-all` delete all other user sessions. RefreshToken
 
 ---
 
@@ -140,7 +140,7 @@ User
 * _SMTP_ACTIVATION_ADDRESS_ activation address path in email which send to new user, for `http://localhost:3000` will send `http://localhost:3000/${userId}`
 
 ---
-<!-- 
+<!--
 ## Tests
 
 - Use jest inside `/packages/*` for each project and add this line to your `package.json` file
