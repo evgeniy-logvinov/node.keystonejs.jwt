@@ -29,6 +29,7 @@ Node + MongoDB + KeystoneJS + JWT with refresh token
 - [Tests](#tests)
 - [Links](#links)
 - [License](#license)
+- [Donate](#donate)
 
 ---
 
@@ -181,3 +182,7 @@ Reach out to me at one of the following places!
 
 - **[MIT license](http://opensource.org/licenses/mit-license.php)**
 - Copyright 2019 © <a href="https://github.com/evgeniy-logvinov" target="_blank">EKL</a>.
+
+## Donate
+### [Coffee](https://www.buymeacoffee.com/YOtKlr9)
+### [Cup of tea](https://money.yandex.ru/to/410018608949852)
