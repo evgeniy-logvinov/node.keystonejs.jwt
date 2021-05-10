@@ -9,7 +9,7 @@
     "dotenv": "^8.0.0",
     "jsonwebtoken": "^8.5.1",
     "keystone": "4.2.1",
-    "lodash": "^4.13.1",
+    "lodash": "^4.17.21",
     "nodemailer": "^6.4.1",
     "pug": "2.0.4",
     "restful-keystone": "^0.3.0"
